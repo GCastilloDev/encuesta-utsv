@@ -1,5 +1,4 @@
-CREATE DATABASE  IF NOT EXISTS `encuestautsv` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */;
-USE `encuestautsv`;
+
 -- MySQL dump 10.13  Distrib 8.0.15, for Win64 (x86_64)
 --
 -- Host: localhost    Database: encuestautsv
@@ -60,7 +59,7 @@ CREATE TABLE `anio_respuestas` (
   `p19` varchar(45) DEFAULT NULL,
   `p25` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`idanio_respuestas`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -145,7 +144,7 @@ CREATE TABLE `encuestasatisfaccion` (
   `contesto_encuesta_satisfaccion` varchar(45) NOT NULL,
   `fecha_contesto` date NOT NULL,
   PRIMARY KEY (`idencuestasatisfaccion`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -178,7 +177,7 @@ CREATE TABLE `tsu_respuestas` (
   `p8` varchar(45) DEFAULT NULL,
   `p9` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`idtsu_respuestas`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
