@@ -106,7 +106,9 @@ function graficaPreguntaDiecinueve(nombre, pregunta, mujer, hombre){
     chart.draw(view, options);
 }
 }
-
+/*
+Funcion para la pregunta 25
+*/
 function graficaPreguntaVeinticinco(nombre, pregunta, p1, p2, p3, p4, p5){
 
   document.getElementById("titulo").innerText = nombre;
