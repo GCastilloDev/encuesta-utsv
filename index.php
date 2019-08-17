@@ -63,6 +63,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </html>
 
 
+/*
 <?php  
 
 	if (isset($_POST['btnLog'])) {
@@ -74,3 +75,4 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	}
 
 ?>
+*/
