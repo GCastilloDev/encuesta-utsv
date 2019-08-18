@@ -120,6 +120,10 @@ class Usuario extends Egresado
         mysqli_close($cdb);
     }
 
+	/**
+	 * Función que realiza una consulta para poder ingresar al dashboard del alumno,
+	 * pasando por SESSION los resultados de la consulta.
+	 */
     public function loginAlumno()
     {
         include_once './modelo/conexion.php';
@@ -138,9 +142,13 @@ class Usuario extends Egresado
             $_SESSION['idUsuario'] = $row['idusuario'];
             $_SESSION['matricula'] = $row['matricula'];
 			$_SESSION['nombre'] = $row['nombre'];
-			$_SESSION['apP'] = $row['apellidoP'];
-			$_SESSION['apM'] = $row['apellidoM'];
-            $_SESSION['psw'] = $row['contrasena']; ?>
+			$_SESSION['apPaterno'] = $row['apellidoP'];
+			$_SESSION['apMaterno'] = $row['apellidoM'];
+			$_SESSION['psw'] = $row['contrasena'];
+			$_SESSION['encuesta_seis_meses'] = $row['contesto_encuesta_satisfaccion'];
+			$_SESSION['encuesta_un_anio'] = $row['contesto_encuesta'];
+
+			?>
 				
 				<script type="text/javascript">
 					location.href='./alumno-dashboard.php';
