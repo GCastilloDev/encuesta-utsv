@@ -9,7 +9,8 @@ Class CtrIndex{
 
 		include_once('./modelo/Usuario.php');
 		$usu = new Usuario(NULL, NULL, NULL, $matricula, NULL, NULL, NULL, $pass);
-		$usu->login();
+		//$usu->login();
+		$usu->loginAlumno();
 	}
 
 

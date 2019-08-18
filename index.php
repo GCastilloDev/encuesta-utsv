@@ -64,15 +64,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 /*
-<?php  
+<?php
 
-	if (isset($_POST['btnLog'])) {
-		
-		include_once('controlador/CtrIndex.php');
+    if (isset($_POST['btnLog'])) {
+        include_once 'controlador/CtrIndex.php';
 
-		$ctr = new CtrIndex();
-		$ctr->accionarBtn($_POST['btnLog'], $_POST['matricula'], $_POST['contrasena']);
-	}
+        $ctr = new CtrIndex();
+        $ctr->accionarBtn($_POST['btnLog'], $_POST['matricula'], $_POST['contrasena']);
+    }
 
 ?>
 */
